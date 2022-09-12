@@ -1,0 +1,16 @@
+package Example.DependencyInjection;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		YazýAnaliziUtility.isValid();
+		YazýAnaliziSingleton.INSTANCE.isValid();
+		
+		
+		YazýAnaliziDependencyInjection asd = new YazýAnaliziDependencyInjection(new Sözlük("Türkçe"));
+		asd.isValid();
+
+	}
+
+}
